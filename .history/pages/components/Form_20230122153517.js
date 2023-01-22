@@ -1,3 +1,4 @@
+import { connect } from 'mongoose';
 import {React, useState} from 'react';
 import styles from '../../styles/Home.module.css';
 
@@ -14,7 +15,7 @@ function Form(props) {
       e.preventDefault();
     console.log(cConfess, cTopic)
       const Confess = { cTopic, cConfess};
-      const response = await fetch("/api/secrets", {
+      const response = await connect('/api/secrets', {
         method: 'POST', 
         body: JSON.stringify({ Confess }),
         headers: {
