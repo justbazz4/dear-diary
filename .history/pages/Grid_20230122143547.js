@@ -5,22 +5,22 @@ import styles from '../styles/Home.module.css';
 function Grid() {
   return (
     <div>
-        <h1 className={styles.hEad} ><Link href='/'>&larr;Dear Diary</Link> </h1>
+        <h1 className={styles.hEad} ><a href='/'>&larr;Dear Diary</a> </h1>
 
 <div className={styles.grid}>
-          <Link href='./components/Form' className={styles.card}>
+          <Link to='./components/Form' className={styles.card}>
             <h2>SHARE A SECRET &rarr;</h2>
             <p></p>
             <p>Share that secret, free your mind. The pages of the diary is your ally.</p>
           </Link>
 
-          <Link href="./components/Contact" className={styles.card}>
+          <Link to="./components/Contact" className={styles.card}>
             <h2>SEEK COUNSELLING ?.. </h2>
             <p>Get anonymous counselling for free here.</p>
           </Link>
 
           <Link
-            href="./components/Community"
+            to="./components/Community"
             className={styles.card}
           >
             <h2>JOIN A COMMUNITY </h2>
@@ -28,7 +28,7 @@ function Grid() {
           </Link>
 
           <Link
-            href="./components/FormList"
+            to="./components/FormList"
             className={styles.card }
           >
             <h2>FEEDBACKS &rarr;</h2>

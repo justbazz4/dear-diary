@@ -10,7 +10,7 @@ function Contact() {
     <h1 className={styles.hEad}><Link href='../Grid'>&larr;Dear Diary</Link> </h1>
     <br />
      <div >
-         <h3 style={{ color: 'green'}}>&quot;GOT AN ITCH YOU WANT TO SCRATCH..?&quot;</h3>
+         <h3 style={{ color: 'green'}}>GOT AN ITCH YOU WANT TO SCRATCH..?"</h3>
          <p>Dear-Diary aims to create a safe space where people can unload their burdens and find the support they need.
        
               The process of reaching a concellor is simple and anonymous. </p>
@@ -20,7 +20,7 @@ function Contact() {
          <a > deardiarycounsel@gmail.com</a>
          <br />
          <br />
-         <h4 style={{color: 'purple'}}>&quot;Use this email to book a phone call session for free&quot;</h4>
+         <h4 style={{color: 'purple'}}>"Use this email to book a phone call session for free"</h4>
           <a>counselor_anonymous@yahoo.com</a>
           </div>
        </div>    

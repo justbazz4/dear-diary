@@ -48,7 +48,7 @@ function HomePage() {
 
      Individuals can visit the website and post their secrets without providing any personal information. They can choose to remain
      
-      anonymous or use a pseudonym. The secrets are then posted on our Social media handles  for others to read and relate to&quot;.
+      anonymous or use a pseudonym. The secrets are then posted on our Social media handles  for others to read and relate to.
   </p>
   <div style={cardStyles}>
       <div>

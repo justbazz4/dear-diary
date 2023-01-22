@@ -34,7 +34,7 @@ function Grid() {
             <h2>FEEDBACKS &rarr;</h2>
             <p>
               Drop your feedbacks and suggestions here, We are Happy to hear from you. 
-            </p>
+            </pLink
           </Link>
           </div>
     </div>

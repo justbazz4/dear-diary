@@ -20,7 +20,7 @@ function Contact() {
          <a > deardiarycounsel@gmail.com</a>
          <br />
          <br />
-         <h4 style={{color: 'purple'}}>&quot;Use this email to book a phone call session for free&quot;</h4>
+         <h4 style={{color: 'purple'}}>&quot;Use this email to book a phone call session for free"</h4>
           <a>counselor_anonymous@yahoo.com</a>
           </div>
        </div>    

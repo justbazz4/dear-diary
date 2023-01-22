@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css';
 function Grid() {
   return (
     <div>
-        <h1 className={styles.hEad} ><Link href='/'>&larr;Dear Diary</Link> </h1>
+        <h1 className={styles.hEad} >< href='/'>&larr;Dear Diary</> </h1>
 
 <div className={styles.grid}>
           <Link href='./components/Form' className={styles.card}>

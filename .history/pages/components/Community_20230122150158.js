@@ -16,11 +16,11 @@ function Community() {
         marginBottom: '15px'
       }} >
           <div style={{ textAlign: 'center', Font: 'bolder',marginTop: '2rem', marginBottom:'4rem'}}>
-          <h1 className={styles.hEad}><Link href='../Grid'>&larr;Dear Diary</Link> </h1>
+          <h1 className={styles.hEad}>< href='../Grid'>&larr;Dear Diary</> </h1>
           <h3 style={{
             color: 'green', padding: '3px 2px'
           }}>
-           Hi there , If you are struggling and looking for a supportive community, <span style={{
+           Hi there , If you're struggling and looking for a supportive community, <span style={{
              textDecorationLine: 'underline', color: 'purple'
            }}><Link href='https://t.me/+Ho-_0WfZ21M4OWM8/'>Dear-Diary Anonymous</Link></span>  is a great place to visit.
             Reach out and share , connect and relate with likeminded people.</h3>

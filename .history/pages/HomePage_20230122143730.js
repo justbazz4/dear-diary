@@ -30,11 +30,11 @@ function HomePage() {
   return (
     <div>
  <h3 className={styles.title}>
-       <Link href='./Grid'>  Welcome to Dear-Diary</Link>
+       <Link to='./Grid'>  Welcome to Dear-Diary</Link>
   </h3>
      
   <p className={styles.description}>
-  &quot; Dear-Diary is a safe and anonymous online community where individuals can share their deepest secrets and thoughts 
+         "Dear-Diary is a safe and anonymous online community where individuals can share their deepest secrets and thoughts 
          
          without fear of judgment or criticism. It is a platform designed for individuals to heal, learn, and grow by sharing their
          
@@ -48,11 +48,11 @@ function HomePage() {
 
      Individuals can visit the website and post their secrets without providing any personal information. They can choose to remain
      
-      anonymous or use a pseudonym. The secrets are then posted on our Social media handles  for others to read and relate to&quot;.
+      anonymous or use a pseudonym. The secrets are then posted on our Social media handles  for others to read and relate to".
   </p>
   <div style={cardStyles}>
       <div>
-        <Link href="./Grid" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link to="./Grid" style={{ textDecoration: 'none', color: 'inherit' }}>
           <button style={buttonStyles} >
             Enter
           </button>

@@ -20,7 +20,7 @@ function Community() {
           <h3 style={{
             color: 'green', padding: '3px 2px'
           }}>
-           Hi there , If you are struggling and looking for a supportive community, <span style={{
+           Hi there , If you&rsquo;re struggling and looking for a supportive community, <span style={{
              textDecorationLine: 'underline', color: 'purple'
            }}><Link href='https://t.me/+Ho-_0WfZ21M4OWM8/'>Dear-Diary Anonymous</Link></span>  is a great place to visit.
             Reach out and share , connect and relate with likeminded people.</h3>

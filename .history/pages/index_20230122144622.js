@@ -12,9 +12,9 @@ export default function Home() {
       </Head>
        
       <main className={styles.main}>
-        <div>
+        <>
         <HomePage />
-        </div>
+        </>
        
         </main>
     </div>
