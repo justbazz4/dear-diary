@@ -12,7 +12,7 @@ function Form(props) {
   
   const submitComment = async (e) => {
     e.preventDefault();
-    console.log( cTopic, cConfess);
+    console.log(cConfess, cTopic);
     const Confess = { cTopic, cConfess };
     try {
         const response = await fetch("/api/secrets", {

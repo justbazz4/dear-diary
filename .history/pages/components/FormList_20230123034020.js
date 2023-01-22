@@ -11,38 +11,38 @@ function FormList(props) {
     const uri = process.MONGODB_URI;
    
    
-  const submitfeedBack = async (e) => {
-    e.preventDefault();
-    console.log(cfeedback);
-    const AllFeedback = { cfeedback };
-    try {
-        const response = await fetch('/api/feedbacks', {
-            method: 'POST',
-            body: JSON.stringify({ AllFeedback }),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        });
-
-        if (!response.ok) {
-            throw new Error(response.statusText);
-        }
-
-        const datafeed = await response.json();
-        Formclear();
-        console.log(datafeed);
-        if (datafeed.success) {
-            alert("Your feedback has been submitted successfully!");
-        }
-    } catch (error) {
-        console.log(error);
-        alert("Error submitting feedback, please try again!");
-    }
-};
-const Formclear = () => {
-    setcFeedback('');
-};
-
+    const submitfeedBack = async (e) => {
+      e.preventDefault();
+      console.log(cfeedback);
+      const AllFeedback = { cfeedback };
+      try {
+          const response = await fetch('/api/feedbacks', {
+              method: 'POST',
+              body: JSON.stringify({ AllFeedback }),
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+          });
+  
+          if (!response.ok) {
+              throw new Error(response.statusText);
+          }
+  
+          const datafeed = await response.json();
+          Formclear();
+          console.log(datafeed);
+          if (datafeed.success) {
+              alert("Your feedback has been submitted successfully!");
+          }
+      } catch (error) {
+          console.log(error);
+          alert("Error submitting feedback, please try again!");
+      }
+  };
+  const Formclear = () => {
+      setcFeedback('');
+  };
+  
    
   return (
     <div style={{ textAlign: 'center',marginTop: '5rem', marginBottom: '4rem'}}>

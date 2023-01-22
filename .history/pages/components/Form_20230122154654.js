@@ -10,42 +10,28 @@ function Form(props) {
   
   const uri = process.MONGODB_URI;
   
-  const submitComment = async (e) => {
-    e.preventDefault();
-    console.log( cTopic, cConfess);
-    const Confess = { cTopic, cConfess };
-    try {
-        const response = await fetch("/api/secrets", {
-            method: 'POST',
-            body: JSON.stringify({ Confess }),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        });
-
-        if (!response.ok) {
-            throw new Error(response.statusText);
-        }
-
-        const data = await response.json();
-        clearForm();
-        console.log(data);
-        if (data.success) {
-            // Show success notification
-            alert("Your confession has been submitted successfully!");
-        }
-    } catch (error) {
-        console.log(error);
-        // Show error notification
-        alert("Error submitting confession, please try again!");
+    const submitComment = async( e) => {
+      e.preventDefault();
+    console.log(cConfess, cTopic)
+      const Confess = { cTopic, cConfess};
+      const response = await fetch("/api/secrets", {
+        method: 'POST', 
+        body: JSON.stringify({ Confess }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+  
+      const data =  await response.json()
+      clearForm();
+      console.log(data)    
+  
+    };
+    const clearForm = () => {
+      setCTopic('');
+      setCConfess('');
     }
-};
-
-const clearForm = () => {
-    setCTopic('');
-    setCConfess('');
-};
-
+  
   return (
     <div style={{
         textAlign: 'center' ,

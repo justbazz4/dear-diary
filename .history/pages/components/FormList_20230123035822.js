@@ -11,7 +11,7 @@ function FormList(props) {
     const uri = process.MONGODB_URI;
    
    
-  const submitfeedBack = async (e) => {
+const submitfeedBack = async (e) => {
     e.preventDefault();
     console.log(cfeedback);
     const AllFeedback = { cfeedback };
@@ -32,16 +32,30 @@ function FormList(props) {
         Formclear();
         console.log(datafeed);
         if (datafeed.success) {
-            alert("Your feedback has been submitted successfully!");
+            // Show success notification
+            showNotification("Your feedback has been submitted successfully!", "success");
         }
     } catch (error) {
         console.log(error);
-        alert("Error submitting feedback, please try again!");
+        // Show error notification
+        showNotification("Error submitting feedback, please try again!", "error");
     }
 };
+
 const Formclear = () => {
     setcFeedback('');
 };
+
+const showNotification = (message, type) => {
+    // Use a notification library or create a custom notification
+    if (type === "success") {
+        // Use toastify or similar library
+        toast.success(message);
+    } else {
+        // Use toastify or similar library
+        toast.error(message);
+    }
+}
 
    
   return (
