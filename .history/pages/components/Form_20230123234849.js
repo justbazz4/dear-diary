@@ -67,7 +67,7 @@ const clearForm = () => {
            <input  onChange={(e) => setCTopic(e.target.value)} id="topic"
             type="text"
             value={cTopic}
-            style={{ width: '350px',height: '40px', fontSize: '16px', backgroundColor: '#eee', borderRadius: '4px' }} />
+            style={{ width: '350px',height: '40px', fontSize: '16px', backgroundColor: '#eee' }} />
             
             </label>
             <br />

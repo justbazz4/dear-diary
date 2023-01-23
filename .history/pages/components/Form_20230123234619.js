@@ -67,7 +67,7 @@ const clearForm = () => {
            <input  onChange={(e) => setCTopic(e.target.value)} id="topic"
             type="text"
             value={cTopic}
-            style={{ width: '350px',height: '40px', fontSize: '16px', backgroundColor: '#eee', borderRadius: '4px' }} />
+            style={{ width: '350px',height: '40px', fontSize: '16px', backgroundColor: '#eee' }} />
             
             </label>
             <br />
@@ -77,7 +77,7 @@ const clearForm = () => {
              <textarea  onChange={(e) => setCConfess(e.target.value)} id="secret" placeholder='No more than 300 words..'
                 maxLength={300}
                 value={cConfess}
-            style={{ backgroundColor: '#eee', width: '350px', height: '170px', fontSize: '16px', borderRadius: '4px'  }} />
+            style={{ backgroundColor: '#eee', width: '350px', height: '170px', fontSize: '16px',  }} />
           </label>
            <br />
          
