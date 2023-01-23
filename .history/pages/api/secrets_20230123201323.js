@@ -13,12 +13,12 @@ export default async function handler(req, res) {
         Topic: Confess.cTopic,
         confess: Confess.cConfess,
       });
-      await Data.save();
+      await 
       // send success status and message to client
       res.status(200).json({ success: true, message: 'Comment submitted successfully.' });
     } catch(err) {
       // send error status and message to client
-      res.status(500).json({ success: false, message: err.message });
+      res.status(500).json({ success: false, message: 'Error submitting comment.' });
     }
   }
 }
