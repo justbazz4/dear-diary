@@ -56,14 +56,14 @@ const Formclear = () => {
           <br />
           <textarea 
             value={cfeedback}
-            maxLength={500}
-            placeholder='No more than 500 words..'
+            maxLength={300}
+            placeholder='No more than 300 words..'
             onChange={(e )=> setcFeedback(e.target.value)}
             style={{ backgroundColor: '#eee', width: '70%', height: '150px', fontSize: '16px' 
-          , borderRadius: '4px',}}
+          ,}}
           />
         </label>
-        <br />
+        <br /0->
         <button style={{ fontSize: '16px', backgroundColor: 'lightblue', cursor:'pointer' }} type='submit'>Share</button>
       </form>
     

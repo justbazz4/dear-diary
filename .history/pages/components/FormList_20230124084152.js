@@ -56,7 +56,7 @@ const Formclear = () => {
           <br />
           <textarea 
             value={cfeedback}
-            maxLength={500}
+            maxLength={300}
             placeholder='No more than 500 words..'
             onChange={(e )=> setcFeedback(e.target.value)}
             style={{ backgroundColor: '#eee', width: '70%', height: '150px', fontSize: '16px' 

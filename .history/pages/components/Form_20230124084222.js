@@ -74,7 +74,7 @@ const clearForm = () => {
   
           <label style={{  }}>
              Comment: 
-             <textarea  onChange={(e) => setCConfess(e.target.value)} id="secret" placeholder='No more than a 1000 words..'
+             <textarea  onChange={(e) => setCConfess(e.target.value)} id="secret" placeholder='No more than 1000 words..'
                 maxLength={1000}
                 value={cConfess}
             style={{ backgroundColor: '#eee', width: '350px', height: '170px', fontSize: '16px',borderRadius: '4px',

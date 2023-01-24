@@ -67,22 +67,22 @@ const clearForm = () => {
            <input  onChange={(e) => setCTopic(e.target.value)} id="topic"
             type="text"
             value={cTopic}
-            style={{ width: '350px',height: '40px', fontSize: '16px', backgroundColor: '#eee',borderRadius: '4px', }} />
+            style={{ width: '350px',height: '40px', fontSize: '16px', backgroundColor: '#eee', }} />
             
             </label>
             <br />
   
           <label style={{  }}>
              Comment: 
-             <textarea  onChange={(e) => setCConfess(e.target.value)} id="secret" placeholder='No more than a 1000 words..'
-                maxLength={1000}
+             <textarea  onChange={(e) => setCConfess(e.target.value)} id="secret" placeholder='No more than 300 words..'
+                maxLength={300}
                 value={cConfess}
-            style={{ backgroundColor: '#eee', width: '350px', height: '170px', fontSize: '16px',borderRadius: '4px',
+            style={{ backgroundColor: '#eee', width: '350px', height: '170px', fontSize: '16px',
               }} />
           </label>
            <br />
          
-          <button style={{ fontSize: '16px', backgroundColor: 'gray',  cursor: 'pointer', paddingTop: '2px', borderRadius: '4px', }}
+          <button style={{ fontSize: '16px', backgroundColor: 'gray',  cursor: 'pointer', paddingTop: '2px', borderRadius: '4px' }}
            type="submit" >Share</button>
        
         </form>   
