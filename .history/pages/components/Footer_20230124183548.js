@@ -21,7 +21,7 @@ function Footer() {
              
           }}>
            
-            <Link href='https://instagram.com/deardiary_counsel?igshid=ZDdkNTZiNTM='>
+            <Link href='https://www.instagram.com/diary_counsel?igshid=YmMyMTAzMzY='>
             <span >
             <Image src={instaimg} alt="Insta Logo" width={30} height={30} />
           </span>
